@@ -19,7 +19,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-zinc-100 flex items-center flex-col`}
       >
-        <main className="w-full max-w-2xl mt-20">{children}</main>
+        <main className="w-full max-w-2xl mt-20 px-4">{children}</main>
       </body>
     </html>
   );
