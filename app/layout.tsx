@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My year",
-  description: "So this is my year",
+  title: "2024 - A Year Recap",
+  description:  "A year recap of 2024",
 };
 
 export default function RootLayout({
