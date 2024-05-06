@@ -6,7 +6,20 @@ const inter = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "2024 - A Year Recap",
-  description:  "A year recap of 2024",
+  description: "A year recap of 2024",
+  metadataBase: new URL("https://recap.josuerhea.me"),
+  openGraph: {
+    title: "Josue A. - @josuerhea",
+    description: "Just a year recap",
+    url: "https://recap.josuerhea.me",
+    siteName: "2024 - A Year Recap",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    title: "Josue A.",
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
