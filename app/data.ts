@@ -30,3 +30,19 @@ export function getMonthsWithDays(): MonthWithDays[] {
     };
   });
 }
+
+export const events = [
+  {
+    color: "#0ea5e9",
+    sections: [
+      {
+        title: "Moving out",
+        description: "Moved out of to a new place to live closer to work",
+        type: "card",
+      },
+    ],
+    month: "January",
+    day: "3",
+    tooltip: 'Life'
+  },
+];
