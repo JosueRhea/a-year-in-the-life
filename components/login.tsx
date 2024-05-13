@@ -1,5 +1,6 @@
 import { Post } from "./post";
 import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 
 const post = {
   username: "liamariew",
@@ -42,9 +43,12 @@ export const Login = () => {
   return (
     <div className="w-full relative">
       <Post post={post} />
-      <div className="h-56 flex items-center flex-col bg-gradient-to-t justify-end from-zinc-100 from-10% -translate-y-56 to-transparent to-100%">
+      <div className="h-56 flex items-center flex-col gap-y-2 bg-gradient-to-t justify-end from-zinc-100 from-10% -translate-y-56 to-transparent to-100%">
         <h2 className="font-bold text-2xl">A beautiful link in bio</h2>
-        <Button>Get yours</Button>
+        <div className="flex items-center gap-x-2">
+          <Input placeholder="@josuerhea" />
+          <Button>Claim it!</Button>
+        </div>
       </div>
     </div>
   );
