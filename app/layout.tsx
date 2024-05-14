@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const inter = Figtree({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({
         className={`${inter.className} bg-zinc-100 flex items-center flex-col`}
       >
         <main className="w-full max-w-lg mt-10 px-4">{children}</main>
+        <Toaster />
       </body>
     </html>
   );
